@@ -1,0 +1,18 @@
+CHOCOLATES
+STOCK
+	twix, 20, 40;
+	mars, 15, 45;
+	mms, 20, 65;
+BANCA
+	5, 30;
+	10, 25;
+	20, 25;
+	30, 20;
+	50, 10;
+	100, 10;
+MOVIMENTOS
+	twix, 10, 10, 20;
+	mars, 50, 20;
+
+
+FIM

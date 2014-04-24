@@ -1,0 +1,35 @@
+<ga>
+  OProva -> cons_OProva(ListaPontos ListaPercursos);
+
+  ListaPontos -> cons_ListaPontos(Pontos);
+
+  Pontos -> cons_Pontos(Ponto Pontos2);
+
+  Pontos2 -> cons_Pontos2(Ponto Pontos2)
+       |  cons_Pontos2_NIL()
+       ;
+
+  Ponto -> cons_Ponto(IdPonto CoordX CoordY);
+
+  IdPonto -> cons_IdPonto(STR);
+  CoordX -> cons_CoordX(INT);
+  CoordY -> cons_CoordY(INT);
+
+  ListaPercursos -> cons_ListaPercursos(Percursos);
+  
+  Percursos -> cons_Percursos(Percurso Percursos2);
+
+  Percursos2 -> cons_Percursos2(Percurso Percursos2)
+       |  cons_Percursos2_NIL()
+       ;
+
+  Percurso -> cons_Percurso(IdPercurso STR ListaRefs);
+
+  IdPercurso -> cons_IdPercurso(STR);
+
+  ListaRefs -> cons_ListaRefs(IdPonto ListaRefs2);
+
+  ListaRefs2 -> cons_ListaRefs2(IdPonto ListaRefs2)
+       |  cons_ListaRefs2_NIL()
+       ;
+</ga>

@@ -1,0 +1,36 @@
+<ga>
+  Mail -> cons_Mail(ElemList);
+
+  ElemList -> cons_ElemList(Elem ElemList2)
+           |  cons_ElemList_NIL()
+           ;
+
+  ElemList2 -> cons_ElemList2(Elem ElemList2)
+            |  cons_ElemList2_NIL()
+            ;
+
+  Elem -> cons_Elem_ToList(ToList)
+       |  cons_Elem_CcList(CcList)
+       |  cons_Elem_Subject(Subject)
+       |  cons_Elem_Message(Message)
+       ;
+
+  ToList -> cons_ToList(STR ToList2);
+
+  ToList2 -> cons_ToList2(STR ToList2)
+          |  cons_ToList2_NIL()
+          ;
+
+  CcList -> cons_CcList(ToList)
+         |  cons_CcList_NIL()
+         ;
+
+  Subject -> cons_Subject(STR Subject)
+          |  cons_Subject_NIL()
+          ;
+  
+  Message -> cons_Message(STR Message)
+          |  cons_Message_NIL()
+          ;
+         
+</ga>

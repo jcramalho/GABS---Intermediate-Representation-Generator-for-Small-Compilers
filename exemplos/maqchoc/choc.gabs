@@ -1,0 +1,27 @@
+<ga>
+  S -> cons_Root(STR S STR S)
+	 | cons_Nil();
+</ga>
+
+MaqChoc   -> cons_MaqChoc(Stock Banca Movimentos);
+
+Stock     -> cons_Stock(ChocList);
+ChocList  : Chocolate ChocList
+		  |
+		  ;
+Chocolate : NOME ',' INT ',' INT ';' ;
+
+Banca     : BANCA MoedaList ;
+MoedaList : Moeda MoedaList
+		  |
+		  ;
+Moeda     : INT ',' INT ';' ;
+
+Movimentos : MOVIMENTOS MovList ;
+MovList    : Movimento MovList
+		   |
+		   ;
+Movimento  : NOME ValList ';' ;
+ValList    : ValList ',' INT
+		   |
+		   ;
