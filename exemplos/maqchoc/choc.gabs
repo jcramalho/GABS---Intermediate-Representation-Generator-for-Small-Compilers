@@ -1,8 +1,5 @@
 <ga>
-  S -> cons_Root(STR S STR S)
-	 | cons_Nil();
-</ga>
-
+  
 MaqChoc   -> cons_MaqChoc(Stock Banca Movimentos);
 
 Stock     -> cons_Stock(ChocList);
@@ -25,3 +22,5 @@ Movimento  : NOME ValList ';' ;
 ValList    : ValList ',' INT
 		   |
 		   ;
+		 
+</ga>
